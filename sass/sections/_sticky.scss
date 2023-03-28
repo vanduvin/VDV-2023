@@ -1,0 +1,21 @@
+
+
+@include from (landscape) {
+  .row.flex-container {
+    display: flex;
+  }
+  aside.au-side-nav.au-accordion {
+
+    &.fixed {
+      position: fixed;
+      top: 2rem;
+
+      &.bottom {
+        top: auto;
+        bottom: 0px;
+        position: absolute;
+      }
+    }
+      
+  }
+}

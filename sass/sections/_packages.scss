@@ -1,0 +1,256 @@
+section#home-packages,
+section#tour-packages {
+    text-align: center;
+    background-color: #bdb698;
+    background-color: rgba(189, 182, 152, 0.75);
+    @include from (landscape) {
+        margin-top: -231px;
+    }
+    position: relative;
+    overflow: hidden;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    &.in-content {
+        margin-top: 3rem;
+    }
+    &.no-bg {
+        background: none;
+    }
+    h2 {
+        margin-bottom: 2rem;
+    }
+    .cards-container {
+        //*max-width: 1000px;
+    }
+}
+
+section#home-packages {
+    @include from (landscape) {
+        margin-top: -242px;
+    }
+    .text-center {
+        text-align: center;
+        position: relative;
+        z-index: 1;
+        h2 {
+            margin-bottom: 0;
+        }
+        p.sub-title {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+            max-width: 45rem;
+            margin: 0px auto 2rem;
+        }
+    }
+    .cards-bg {
+        @include from (landscape) {
+            top: 242px;
+        }
+    }
+}
+
+.cards-bg {
+    background: url(../assets/img/bg-v-white.png);
+    background-repeat: repeat;
+    background-position: top center;
+    opacity: 0.25;
+    position: absolute;
+    top: 0;
+    @include from (landscape) {
+        top: 175px;
+    }
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.card-container {
+    display: block;
+    background: #fff;
+    box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.4);
+    @include to (landscape) {
+        margin-bottom: 2rem;
+    }
+    .card-head {
+        background: #242424;
+        color: #fff;
+        h3 {
+            display: block;
+            a {
+                color: #fff;
+                background: #000;
+                text-decoration: none;
+                display: block;
+                padding: 0.5rem 1rem;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+        p {
+            margin: 0;
+            padding: 0.75rem 1rem;
+            font-size: 1.2rem;
+        }
+    }
+    .card-body {
+        @include from (landscape) {
+            min-height: 450px;
+        }
+        ul {
+            margin-left: 0;
+            padding: 1rem;
+            li {
+                list-style: none;
+                padding: 0;
+            }
+        }
+    }
+    .card-foot {
+        display: block;
+        padding: 1rem;
+        .card-price {
+            padding: 1rem;
+            display: block;
+            background: #ddd;
+            border: 1px solid #bbb;
+            p.price-from {
+                display: block;
+                margin: 0px auto;
+                text-transform: uppercase;
+                letter-spacing: 3px;
+                font-weight: 700;
+            }
+            p.price {
+                font-weight: 400;
+                font-size: 4rem;
+                position: relative;
+                line-height: 1;
+                margin: 0px auto;
+                span.dolar {
+                    font-size: 1.5rem;
+                    position: relative;
+                    top: -1.5rem;
+                    margin-left: 2rem;
+                }
+                span.per-person {
+                    font-size: 0.85rem;
+                    max-width: 50px;
+                    text-align: left;
+                    display: inline-block;
+                }
+            }
+        }
+        .au-btn {
+            font-size: 0.8rem;
+            width: 45%;
+            padding: 0.5rem;
+            letter-spacing: 1.5px;
+            display: inline-block;
+            border: 1px solid #000;
+            &.btn-white {
+                margin-right: 5%;
+            }
+        }
+    }
+}
+
+.card-container.w-image {
+    margin-bottom: 2rem;
+    .card-image {
+        height: 225px;
+        width: 100%;
+        position: relative;
+        .background-image {
+            background-size: cover;
+            background-position: center center;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+        }
+        .card-gradident {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 100px;
+            background: #00000087;
+            background: rgb(0, 0, 0);
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+            width: 100%;
+        }
+        .card-image-info {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            padding: 0.5rem 1rem 0.75rem;
+            text-align: left;
+            ul {
+                padding: 0;
+                margin: 0;
+                display: inline-block;
+                text-align: left;
+                li {
+                    padding: 0;
+                    margin: 0 0.75rem 0 0;
+                    display: inline-block;
+                    color: #fff;
+                    font-weight: 500;
+                    span.icon {
+                        width: 20px;
+                        height: 20px;
+                        background-size: 100px;
+                        background-position: 0px 0px;
+                        background-image: url(../assets/img/icons.svg);
+                        display: inline-block;
+                        position: relative;
+                        margin-right: 0.25rem;
+                        top: 4px;
+                    }
+                    &.tour-guests span.icon {
+                        background-position: -21px 0px;
+                        width: 25px;
+                    }
+                    &.tour-wineries span.icon {
+                        background-position: -47px 0px;
+                        width: 16px;
+                    }
+                }
+            }
+        }
+    }
+    .card-body {
+        text-align: left;
+        padding: 1rem 1rem 0;
+        min-height: 0;
+        p {
+            font-weight: 700;
+            font-size: 1.1875rem;
+            line-height: 1.25;
+        }
+        ul {
+            margin: 0;
+            padding: 0;
+            li {
+                font-size: 0.85rem;
+            }
+        }
+    }
+    .card-price {
+        position: relative;
+        p.price-from {
+            position: absolute;
+            top: 54px;
+            font-size: 0.9rem;
+            left: 50%;
+            margin-left: -120px;
+        }
+        p.price span.per-person {
+            margin-left: 0.5rem;
+            top: -5px;
+            position: relative;
+        }
+    }
+}

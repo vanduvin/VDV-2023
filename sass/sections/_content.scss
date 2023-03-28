@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+}
+
+section.au-body {
+    padding: 3rem 0;
+    * > .au-btn {
+        margin-top: 1rem;
+    }
+    .au-card-list li {
+        margin: 1rem auto 0.5rem;
+    }
+}
+
+@include from (portrait) {
+    aside.au-side-nav.au-accordion {
+        max-width: 250px;
+    }
+}
+
+h2.au-sidenav__title {
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #242424;
+    border-bottom: 2px solid gray;
+    display: block;
+    padding: 1rem;
+}
+
+span.mobile-button {
+    display: block;
+    @include from (landscape) {
+        display: none;
+    }
+}
+
+section.au-body .au-card-list li {
+    margin: 1rem 0 0.5rem;
+}
+
+.au-table__wrapper {
+    margin-top: 1.5rem;
+}
+
+.au-btn,
+section.au-body * > .au-btn {
+    border-radius: 0;
+    border: none;
+    background: #000;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 700;
+    padding: 0.5rem 1rem;
+    &.btn-white {
+        background: #fff;
+        color: #000;
+        border: 1px solid #000;
+    }
+}
+
+#home-content {
+    padding: 2rem 0;
+    .row {
+        padding: 2rem 0;
+    }
+}
+
+#google-reviews {
+    adding: 4rem 0;
+    background: #000;
+    h2 {
+        color: #fff;
+        margin-bottom: 1.5rem;
+        font-size: 1.5rem;
+    }
+}
+
+.banner,
+.text-center {
+    text-align: center;
+    p {
+        max-width: 100%;
+    }
+    ul {
+        padding: 0;
+        li {
+            list-style: none;
+            padding: 0;
+        }
+    }
+}
+
+#video-section {
+    background: #1a1a1a;
+    position: relative;
+    padding: 4rem 0;
+    &:before {
+        content: '';
+        background: url(../assets/img/bg-v-black.png);
+        background-repeat: repeat;
+        background-position: center center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    /* 16:9 */
+    height: 0;
+    iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}

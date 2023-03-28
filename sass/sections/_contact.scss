@@ -1,0 +1,21 @@
+.contact-form {
+    margin: 2rem auto 0;
+    position: relative;
+    
+    .hubspot-link__container.sproket {
+        display: none !important;
+        opacity: 0;
+    }   
+    #cover-me {
+        background: #fff;
+        height: 50px;
+        width: 100%;
+        display: block;
+        position: absolute;
+        bottom: 10px;
+        z-index: 1;
+    }
+}
+section#home-packages.in-content.contact-page {
+    margin-top: -3rem;
+}

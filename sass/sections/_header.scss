@@ -1,0 +1,187 @@
+header.au-header {
+  background: rgba(255, 255, 255, 0);
+  padding: 1rem 0;
+  box-sizing: border-box;
+  @include from (portrait) {
+    &#home-header {
+      position: absolute;
+      width: 100%;
+      top: 0;
+      z-index: 3;
+      background-color: rgba(255, 255, 255, 0);
+      &.sticky {
+        position: fixed;
+        background-color: #fff;
+        height: 78px;
+        .logo {
+          &.not-sticky {
+            display: none;
+          }
+          &.sticky-logo {
+            display: inline-block;
+            max-height: 50px;
+          }
+        }
+        .head-right .phone a {
+          color: #000;
+        }
+      }
+      .logo.sticky-logo {
+        max-height: 0;
+      }
+    }
+  }
+  @include to (landscape) {
+    .head-right span.phone {
+      display: none;
+    }
+  }
+  @include to (portrait) {
+    &#home-header {
+      position: absolute;
+      width: 100%;
+      top: 0;
+      z-index: 5;
+      background-color: rgba(255, 255, 255, 0);
+      .logo.sticky-logo {
+        display: none;
+      }
+      &.sticky {
+        position: fixed;
+        background-color: #fff;
+        height: 50px;
+          .logo {
+            &.not-sticky {
+              display: none;
+            }
+            &.sticky-logo {
+              display: inline-block;
+              max-height: 50px;
+            }
+          }
+      }
+      .logo.sticky-logo {
+        max-width: 120px;
+      }
+      .head-left {
+        position: absolute;
+        left:0.5rem;
+        top: 0.5rem;
+        padding: 0;
+      }
+      .head-centre {
+        position: absolute;
+        left:50%;
+        top: 1rem;
+        padding: 0;
+        width: 220px;
+        margin-left: -110px;
+      }
+      .head-right {
+        position: absolute;
+        right:0.5rem;
+        top: 0.35rem;
+        padding: 0;
+      }
+      button.au-main-nav__toggle, .booking-button .au-btn {
+        font-size: 0.75rem;
+        letter-spacing: 0.5px;
+        padding: 0.3rem 0.5rem;
+      }
+      .booking-button .au-btn {
+          padding: 0.65rem 0.75rem;
+      }
+    }
+  }
+  @include from (portrait) {
+    padding: 1rem;
+  }
+
+  .container {
+    /*width: auto;*/
+
+    .head-centre {
+      text-align: center;
+
+      .au-header__brand {
+        min-width: 220px;
+        @include from (portrait) {
+          min-width: 100%;
+        }        
+      }      
+    }
+
+    .head-right {
+      text-align: right;
+      a {
+        color: #fff;
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+      .booking-button {
+        float:right;
+      }
+    }
+  }
+
+  nav#mainmenu {
+    background: none;
+    border: none;
+  }
+
+  form.au-search {
+    margin-top: 0.75rem;
+    @include from (desktop) {
+      float: right;
+    }
+  }
+
+  button.au-main-nav__toggle {
+    background: $color-highlight;
+    border-radius: $radius;
+  }
+
+  button.au-main-nav__toggle, .booking-button .au-btn {
+    background: #000;
+    border-radius: 0;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border: none;
+
+    &:before {
+        display: inline-block;
+    }
+  }
+
+  span.phone {
+    position: relative;
+    margin: 9px 12px 0px;
+    display: inline-block;
+    font-size: 1rem;
+    letter-spacing: 1.5px;
+
+    a {
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+
+}
+
+@media (max-width: 395px) {
+ header.au-header .container .head-centre .au-header__brand, header.au-header#home-header .booking-button .au-btn {
+
+  }
+    .col-sm-3.col-md-4.head-left, .col-sm-3.col-md-4.head-right {
+        z-index: 99;
+    }
+    .header-wrap section#hero-banner.page-title .background-image {
+        height: 175px;
+    }
+}

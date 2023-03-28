@@ -1,0 +1,110 @@
+#special-packages {
+    padding: 0;
+    
+    .border {
+        position: relative;
+        border: 5px solid #fff;
+        padding: 2rem 4rem 6rem;
+        display: block;
+        z-index: 1;
+        color: #fff;
+        height: 100%;
+        text-align: center;
+    }
+
+    .container{
+        width: 100%;
+        padding: 0;
+
+        .row {
+            @include from (landscape) {
+                display: flex;
+            }
+
+            width: 100%;
+            margin: 0;
+
+            .col-md-6, .col-md-4 {
+                flex: 1;
+                padding: 1rem;
+            }
+
+            .background-image {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                background-position: center center;
+                background-size: cover;
+
+                span {
+                    background-image: url(../../assets/img/V-transparent.png);
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                    background-position: center center;
+                    background-size: cover;
+                }
+            }
+
+            .border {
+                position: relative;
+                border: 5px solid #fff;
+                padding: 2rem 4rem 6rem;
+                display: block;
+                z-index: 1;
+                color: #fff;
+                height: 100%;
+                text-align: center;
+
+                img {
+                    max-width: 200px;
+                    padding-bottom: 0;
+                }
+
+                h2 {
+                    display: block;
+                    color: #fff;
+                    margin-top: 1.5rem;
+                    font-size: 1.5rem;
+                }
+
+                p {
+                    font-size: 1.2rem;
+                    margin-top: 0.5rem;
+                }
+
+                .au-btn.au-white {
+                    position: absolute;
+                    bottom: 2rem;
+                    left: 50%;
+                    margin-left: -80px;
+                    color: #000;
+                    background: #fff;
+                    
+                    &.book-now {
+                        margin-left: -145px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+section#special-packages #special-intro {
+    padding: 3rem 0 0;
+    background: black;
+
+    h2 {
+        color: #fff;
+    }
+    
+    p {
+        color: #fff;
+        margin: 1rem auto 3rem;
+        max-width:650px;
+    }
+}

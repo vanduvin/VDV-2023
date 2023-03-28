@@ -1,0 +1,58 @@
+<!-- SKIP-LINKS -->
+<nav class="au-skip-link">
+  <a class="au-skip-link__link" href="#content">Skip to main content</a>
+  <a class="au-skip-link__link" href="#mainmenu">Skip to main navigation</a>
+</nav>
+
+<!-- HEADER -->
+<header class="au-header" role="banner">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-5 col-md-push-1 col-lg-2 col-lg-push-0">
+        <a class="au-header__brand" href="https://vanduvin.com.au/">
+          <img class="au-header__brand-image" alt="Insert alternate text here" src="assets/img/header-logo-agov.png">
+        </a>
+      </div>
+      <div class="col-md-1 col-md-pull-5 col-lg-8 col-lg-pull-0">
+        <!-- MAIN NAVIGATION -->
+        <nav class="au-main-nav" id="mainmenu" aria-label="main">
+          <div class="au-main-nav__content" id="main-nav-default-dark">
+            <button
+              aria-controls="main-nav-default-dark"
+              class="au-main-nav__toggle au-main-nav__toggle--open"
+              onClick="return AU.mainNav.Toggle( this )">
+              Menu
+            </button>
+            <div class="au-main-nav__menu">
+              <div class="au-main-nav__menu-inner">
+                <div class="au-main-nav__focus-trap-top"></div>
+                <button
+                  aria-controls="main-nav-default-dark"
+                  class="au-main-nav__toggle au-main-nav__toggle--close"
+                  onClick="return AU.mainNav.Toggle( this )">
+                  Close
+                </button>
+                <ul class="au-link-list">
+                  <li><a href="#">Individuals and families</a></li>
+                  <li><a href="#">Business and organisations</a></li>
+                  <li><a href="#">Tax professionals</a></li>
+                </ul>
+                <div class="au-main-nav__focus-trap-bottom"></div>
+              </div>
+            </div>
+            <div class="au-main-nav__overlay" aria-controls="main-nav-default-dark" onClick="return AU.mainNav.Toggle( this )"></div>
+          </div>
+        </nav>
+      </div>
+      <div class="col-md-6 col-lg-2">
+        <form role="search" aria-label="sitewide" class="au-search au-search--dark au-search--icon">
+          <label for="standard" class="au-search__label">Search this website</label>
+          <input type="search" placeholder="Search this site" id="standard" name="standard" class="au-text-input au-text-input--dark"/>
+          <div class="au-search__btn">
+            <button class="au-btn au-btn--dark" type="submit"><span class="au-search__submit-btn-text">Search</span></button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</header>

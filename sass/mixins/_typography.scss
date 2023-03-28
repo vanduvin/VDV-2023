@@ -1,0 +1,20 @@
+.au-body{
+  * {
+    box-sizing: border-box;
+  }
+  p {
+      max-width: 47rem;
+  }
+  * + p {
+      margin-top: 16px;
+      margin-top: 1rem;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 700;
+  color: #000;
+}
+

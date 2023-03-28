@@ -1,0 +1,62 @@
+footer.au-footer.au-footer--dark {
+    background: #000;
+    border: none;
+    a {
+        color: #fff;
+    }
+    h4 {
+        color: $white;
+    }
+    .lockup {
+        width: 2px;
+        background: #444;
+        margin: 0px 2rem;
+        height: 175px;
+        display: inline-block;
+    }
+    @media (max-width: 400px) {
+        .footer-logos {
+            .lockup {
+                height: 120px;
+            }
+            img {
+                max-height: 120px;
+                max-width: 120px;
+            }
+        }
+    }
+    ul {
+        padding: 0;
+        li {
+            list-style: none;
+            padding-left: 0;
+            padding-bottom: 0.3rem;
+        }
+    }
+    .footer-lower {
+        margin-top: 2rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        border-top: 1px solid #444;
+        .copyright {}
+        .socials {
+            @include from (portrait) {
+                text-align: right;
+            }
+            display: inline;
+            h5 {
+                display: inline;
+                color: $white;
+            }
+            ul {
+                display: inline;
+                margin: 0;
+                padding: 0;
+                li {
+                    display: inline;
+                    margin-left: 0.5rem;
+                }
+            }
+        }
+    }
+}
